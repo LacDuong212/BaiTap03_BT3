@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.5"
+            android:background="@drawable/top_background1"/>
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:text="Welcome\nBack"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:drawableStart="@drawable/email"
+            android:hint="Email"
+            android:padding="10dp"
+            android:drawablePadding="12dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:hint="Password"
+            android:drawableStart="@drawable/password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:drawablePadding="12dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/btn_login"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/btn_arraw1"
+            android:layout_gravity="center"
+            android:scaleType="fitEnd" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_facebook"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Facebook"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#507097"
+                android:backgroundTint="@android:color/white"
+                app:icon="@drawable/facebook"
+                app:iconTint="#507097"
+                app:iconPadding="10dp"
+                app:strokeColor="#507097"
+                app:strokeWidth="3dp"
+                app:cornerRadius="8dp"
+                android:gravity="center_vertical|start"
+                app:iconGravity="end"
+                app:iconSize="30dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_google"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Google"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#507097"
+                android:backgroundTint="@android:color/white"
+                app:icon="@drawable/google"
+                app:iconTint="#507097"
+                app:iconPadding="10dp"
+                app:strokeColor="#507097"
+                app:strokeWidth="3dp"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical|start"
+                app:iconGravity="end"
+                app:iconSize="30dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Are you new user? Register"
+            android:textColor="#3b608c"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
